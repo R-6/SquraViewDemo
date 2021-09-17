@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.squraviewdemo.ZoomLayout
+        android:id="@+id/zoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:clipChildren="false"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical|horizontal"
+        >
+
+        <com.example.squraviewdemo.CanvasLayout
+            android:id="@+id/canvas"
+            android:layout_width="2400px"
+            android:layout_height="2400px"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            >
+
+
+        </com.example.squraviewdemo.CanvasLayout>
+
+        <!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="500dp"-->
+<!--            android:background="#000000"-->
+<!--            android:layout_gravity="center"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvSubtitle2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:scrollbars="vertical"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivOff"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:src="@drawable/ic_launcher_foreground"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivOn"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:src="@drawable/ic_launcher_background"-->
+<!--                />-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/linear"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                >-->
+
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/fullIVideo"-->
+
+<!--                    android:layout_width="match_parent"-->
+
+<!--                    android:layout_height="300dp"-->
+
+<!--                    android:src="@drawable/ic_launcher_background"-->
+<!--                    />-->
+
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/colorCode"-->
+
+<!--                    android:layout_width="match_parent"-->
+
+<!--                    android:layout_height="300dp"-->
+
+<!--                    android:src="@drawable/ic_launcher_background"-->
+<!--                    />-->
+
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/labelText"-->
+
+<!--                    android:layout_width="match_parent"-->
+
+<!--                    android:layout_height="300dp"-->
+
+<!--                    android:src="@drawable/ic_launcher_background"-->
+<!--                    />-->
+
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/label_play"-->
+
+<!--                    android:layout_width="100dp"-->
+
+<!--                    android:layout_height="100dp"-->
+
+<!--                    android:layout_alignTop="@+id/fullIVideo"-->
+
+<!--                    android:layout_centerHorizontal="true"-->
+
+<!--                    android:layout_centerVertical="true"-->
+
+<!--                    android:layout_marginTop="91dp"-->
+
+<!--                    android:src="@drawable/ic_launcher_foreground"-->
+
+<!--                    />-->
+
+<!--            </RelativeLayout>-->
+
+
+<!--            <LinearLayout-->
+
+<!--                android:id="@+id/custom_toast_layout"-->
+
+<!--                android:layout_width="300dp"-->
+
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_above="@+id/up"-->
+
+<!--                android:layout_centerHorizontal="true"-->
+
+<!--                android:layout_centerVertical="true"-->
+
+<!--                android:background="@drawable/ic_launcher_background"-->
+
+<!--                android:orientation="vertical"-->
+
+<!--                android:paddingLeft="10dp"-->
+
+<!--                android:paddingTop="10dp"-->
+
+<!--                android:paddingRight="10dp"-->
+
+<!--                android:paddingBottom="10dp"-->
+<!--                >-->
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/tvLabel"-->
+
+<!--                    android:layout_width="wrap_content"-->
+
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:layout_gravity="center"-->
+
+<!--                    android:text="Medium Text"-->
+
+<!--                    android:textColor="#ffffff"-->
+
+<!--                    android:textSize="15sp"-->
+<!--                    />-->
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/tvLabelDescription"-->
+
+<!--                    android:layout_width="wrap_content"-->
+
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:layout_gravity="center"-->
+
+<!--                    android:layout_marginTop="5dp"-->
+
+<!--                    android:text="New Text"-->
+
+<!--                    android:textColor="#ffffff"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            <ImageView-->
+
+<!--                android:id="@+id/up"-->
+
+<!--                android:layout_width="50dp"-->
+
+<!--                android:layout_height="50dp"-->
+
+<!--                android:layout_alignParentBottom="true"-->
+
+<!--                android:layout_centerHorizontal="true"-->
+
+<!--                android:src="@drawable/ic_launcher_foreground"-->
+<!--                />-->
+
+<!--            <com.example.squraviewdemo.SquraView-->
+<!--                android:layout_width="80px"-->
+<!--                android:layout_height="80px"-->
+<!--                android:layout_centerInParent="true"/>-->
+
+<!--        </RelativeLayout>-->
+
+
+    </com.example.squraviewdemo.ZoomLayout>
+
+    <Button
+        android:id="@+id/btn_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomLayout"
+        android:text="聚焦"
+        />
+    <Button
+        android:id="@+id/btn_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomLayout"
+        android:text="顺势针30度"
+        android:layout_toEndOf="@id/btn_focus"
+        />
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomLayout"
+        android:text="清空"
+        android:layout_toEndOf="@id/btn_rotation"
+        />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomLayout"
+        android:text="安装"
+        android:layout_toEndOf="@id/btn_del"
+        />
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_focus"
+        android:text="校准"
+        />
+    <Button
+        android:id="@+id/btn_check_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_check"
+        android:text="校准下一个"
+        />
+    <Button
+        android:id="@+id/btn_install_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_focus"
+        android:text="安装下一个"
+        android:layout_toEndOf="@id/btn_del"
+        />
+    <Button
+        android:id="@+id/btn_color_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_install_next"
+        android:text="颜色模式"
+        android:layout_toEndOf="@id/btn_del"
+        />
+
+    <!--    <com.example.squraviewdemo.MoveAndCropRectView-->
+<!--        android:id="@+id/move_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
+</RelativeLayout>
+
+
